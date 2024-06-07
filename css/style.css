@@ -1,0 +1,94 @@
+body {
+  font-family: "PT Sans Caption", sans-serif;
+
+  i {
+    color: inherit;
+  }
+}
+
+.main {
+  background-color: #f7ecde;
+
+  h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 25%;
+      left: 0;
+      bottom: 10px;
+      background-color: #fec260;
+      transition: height 350ms;
+      z-index: -1;
+    }
+    &:hover::before {
+      height: 50%;
+    }
+  }
+
+  .bookmark-form {
+    border-top: 2px dotted #352e28;
+    border-bottom: 2px dotted #352e28;
+
+    h2 {
+      font-family: "Righteous", cursive;
+      font-size: 25px;
+      background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .form-control:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #d99c39;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem #fec26055;
+    }
+    .submit {
+      width: 150px;
+    }
+  }
+
+  .my-modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    .modal-content {
+      width: 500px;
+
+      .circle-1 {
+        color: #f15f5d;
+        font-size: 20px;
+      }
+      .circle-2 {
+        color: #febe2e;
+        font-size: 20px;
+      }
+      .circle-3 {
+        color: #4db748;
+        font-size: 20px;
+      }
+      p {
+        font-size: 21px;
+        line-height: 1.3;
+        color: #352e28;
+      }
+      li {
+        font-size: 18px;
+        padding-top: 10px;
+
+        i {
+          color: #bb4120;
+        }
+      }
+    }
+  }
+}
